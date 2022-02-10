@@ -7,7 +7,8 @@ TestLotteryMachine
 
 LotteryMachine
 --------------------
-
+- scoreboard : Scoreboard
+- drum : Drum
 --------------------
 # executeDraw() : void
 
@@ -15,9 +16,11 @@ LotteryMachine
 
 Drum
 --------------------
-
+- allBalls : Balls[]
 --------------------
 # collectAllBalls() : void
+# scoopBall() : void
++ toString() : String
 
 
 
@@ -26,7 +29,7 @@ Scoreboard
 - score : Ball[]
 --------------------
 # empty() : void
-# placeBall() : void
+# placeBall(Ball ball) : void
 # sort(Ball[] score) : void
 + getScore() : String ?
 + printScoreBoard() : void
