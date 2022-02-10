@@ -1,0 +1,42 @@
+
+TestLotteryMachine
+--------------------
+--------------------
++ main() : void <<static>>
+
+
+LotteryMachine
+--------------------
+
+--------------------
+# executeDraw() : void
+
+
+
+Drum
+--------------------
+
+--------------------
+# collectAllBalls() : void
+
+
+
+Scoreboard
+--------------------
+- score : Ball[]
+--------------------
+# empty() : void
+# placeBall() : void
+# sort(Ball[] score) : void
++ getScore() : String ?
++ printScoreBoard() : void
++ toString() : String
+
+
+Ball
+--------------------
+- number : int
+--------------------
+Ball()
++ isNumberBiggerThan : boolean
++ toString() : String
