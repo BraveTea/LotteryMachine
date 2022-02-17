@@ -10,10 +10,6 @@ public class Ball {
         return number > differentBall.number;
     }
 
-    public int getNumber() {
-        return number;
-    }
-
     @Override
     public String toString() {
         return "" + number;

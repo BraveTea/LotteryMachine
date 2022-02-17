@@ -5,14 +5,14 @@ public class Drum {
 
     private ArrayList<Ball> allBalls = new ArrayList<>();
     private Random generator = new Random();
+    private final int numberOfBalls = 45;
 
     public Drum() {
     }
 
     protected void collectAllBalls(){
-        for (int i = 0; i < 45; i++){
-            int ballNumber = i + 1;
-            allBalls.add(new Ball(ballNumber));
+        for (int i = 1; i < numberOfBalls + 1; i++){
+            allBalls.add(new Ball(i));
         }
     }
 
@@ -22,13 +22,10 @@ public class Drum {
         return ball;
     }
 
-
-
     //I think that I would normally put this in a class with a few overloaded methods. Sticking to the assignment I won't
     private int randomGenerator(int origin, int bound){
         return generator.nextInt(origin, bound);
     }
-
 
     @Override
     public String toString() {
