@@ -6,7 +6,7 @@ public class Ball {
         this.number = number;
     }
 
-    public boolean isBiggerThan(Ball differentBall){
+    protected boolean isBiggerThan(Ball differentBall){
         return number > differentBall.number;
     }
 
@@ -16,6 +16,6 @@ public class Ball {
 
     @Override
     public String toString() {
-        return "Ball Number: " + number;
+        return "" + number;
     }
 }

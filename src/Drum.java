@@ -4,7 +4,7 @@ import java.util.Random;
 public class Drum {
 
     private ArrayList<Ball> allBalls = new ArrayList<>();
-    Random generator = new Random();
+    private Random generator = new Random();
 
     public Drum() {
     }
@@ -17,22 +17,18 @@ public class Drum {
     }
 
     protected Ball scoopBall(){
-        Ball scooped = // dit moet kijken naar wat de randomGenerator teruggeeft en op basis daarvan de Ball in
-        // allBalls erbij zoeken die dat nummer als field heeft. Deze ball wordt vervolgens in scoreboard.score
-        // geplaatst zodat die niet opnieuw gekozen kan worden. Dus de random bound moet even groot zijn als de
-        // allBalls.size() (of zo).
-        //
-
-        return Ball
+        Ball ball = allBalls.get(randomGenerator(1, allBalls.size())); //returns a random Ball in allBalls list
+        allBalls.remove(ball);
+        return ball;
     }
 
-    private int randomGenerator(){
-        return generator.nextInt(1, 46);
+
+
+    //I think that I would normally put this in a class with a few overloaded methods. Sticking to the assignment I won't
+    private int randomGenerator(int origin, int bound){
+        return generator.nextInt(origin, bound);
     }
 
-    public ArrayList<Ball> getAllBalls() {
-        return allBalls;
-    }
 
     @Override
     public String toString() {

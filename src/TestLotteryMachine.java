@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class TestLotteryMachine {
 
     public static void main(String[] args){
@@ -6,7 +9,6 @@ public class TestLotteryMachine {
         LotteryMachine lotteryMachine = new LotteryMachine();
 
         lotteryMachine.executeDraw();
-
 
     }
 }
