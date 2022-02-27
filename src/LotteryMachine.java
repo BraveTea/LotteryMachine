@@ -1,8 +1,8 @@
 
 public class LotteryMachine {
 
-    private Scoreboard scoreboard = new Scoreboard();
-    private Drum drum = new Drum();
+    private final Scoreboard scoreboard = new Scoreboard();
+    private final Drum drum = new Drum();
     private final int numberOfRegularTubes = 6; //how many regular balls will be scooped?
 
     public LotteryMachine() {
