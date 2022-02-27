@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Scoreboard {
 
-    private ArrayList<Ball> score = new ArrayList<>();
+    private final ArrayList<Ball> score = new ArrayList<>();
     private Ball bonusBall;
 
     public Scoreboard() {
@@ -13,7 +13,12 @@ public class Scoreboard {
     }
 
     protected void placeBonusBall(Ball ball){
-        bonusBall = ball;
+        if (bonusBall != null){
+            throw new IllegalArgumentException("Bonus ball already placed");
+        }
+        else {
+            bonusBall = ball;
+        }
     }
 
     protected void empty(){

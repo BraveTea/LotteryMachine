@@ -3,9 +3,9 @@ import java.util.Random;
 
 public class Drum {
 
-    private ArrayList<Ball> allBalls = new ArrayList<>();
-    private Random generator = new Random();
-    private final int numberOfBalls = 45;
+    private final ArrayList<Ball> allBalls = new ArrayList<>();
+    private final Random generator = new Random();
+    private final int numberOfBalls = 45; // I don't want this to be local, for if the size changes this is a great spot to show it.
 
     public Drum() {
     }
