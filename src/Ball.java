@@ -1,6 +1,6 @@
 public class Ball {
 
-    private int number;
+    private final int number;
 
     public Ball(int number) {
         this.number = number;
