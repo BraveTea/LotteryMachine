@@ -27,7 +27,7 @@ public class Scoreboard {
                 if (score.get(j).isBiggerThan(score.get(j+1))){
                     Ball ball = score.get(j);
                     score.set(j, score.get(j + 1));
-                    score.set (j + 1, ball);
+                    score.set(j + 1, ball);
                 }
             }
         }
